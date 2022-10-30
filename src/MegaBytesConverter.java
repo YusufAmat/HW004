@@ -6,12 +6,12 @@ public class MegaBytesConverter {
         printMegaBytesAndKiloBytes(5000);
     }
 
-    public static void printMegaBytesAndKiloBytes (int kiloBytes){
-        if (kiloBytes>=0){
-        int kiloByts = kiloBytes % 1024 ;
-        int megaBytes = (kiloBytes - kiloByts) / 1024;
-        System.out.println("\"" + kiloBytes + " KB= " + megaBytes + " MB and " + kiloByts + " KB\"");
-        }else {
+    public static void printMegaBytesAndKiloBytes(int kiloBytes) {
+        if (kiloBytes >= 0) {
+            int kiloByts = kiloBytes % 1024;
+            int megaBytes = (kiloBytes - kiloByts) / 1024;
+            System.out.println("\"" + kiloBytes + " KB= " + megaBytes + " MB and " + kiloByts + " KB\"");
+        } else {
             System.out.println("\"Invalid Value\" because parameter is less than 0.");
         }
     }

@@ -13,7 +13,7 @@ public class SpeedConverter {
         printConversion(75.114);
     }
 
-    public static long toMilesPerHour (double kilometersPerHour ) {
+    public static long toMilesPerHour(double kilometersPerHour) {
         long miles;
         if (kilometersPerHour >= 0) {
             miles = Math.round(kilometersPerHour / 1.609);
@@ -25,7 +25,7 @@ public class SpeedConverter {
         return miles;
     }
 
-    public static void printConversion (double kilometersPerHour) {
+    public static void printConversion(double kilometersPerHour) {
         long miles;
         if (kilometersPerHour >= 0) {
             miles = Math.round(kilometersPerHour / 1.609);
